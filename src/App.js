@@ -1,12 +1,11 @@
 import React from 'react';
-import Carousel from './components/Carousel/Carousel';
+import {RouterProvider} from 'react-router-dom';
+import router from './routes/MainRoutes';
 
 const App = () => {
   return (
     <div>
-      <div className='w-1/2 h-1/2'>
-        <Carousel></Carousel>
-      </div>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 };
